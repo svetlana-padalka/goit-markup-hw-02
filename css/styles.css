@@ -9,6 +9,14 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --background-color: #ffffff;
+  --background-color-hero: #2f303a;
+  --background-color-hero-btn: #2196f3;
+  --background-color-team: #f5f4fa;
+  --background-color-footer: #2f303a;
+  --hover-color-hero-btn: #188ce8;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
 }
 body {
@@ -49,7 +57,7 @@ body {
   background: var(--background-color);
 }
 .header-logo {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 .nav-list-link {
   font-weight: 500;
@@ -81,7 +89,7 @@ body {
 
 /* Герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color-hero);
 }
 .hero-title {
   font-weight: 900;
@@ -90,7 +98,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .hero-btn {
   font-family: inherit;
@@ -102,12 +110,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
-  /* background-color: #188ce8; */
+  color: var(--primary-white-color);
+  background-color: var(--background-color-hero-btn);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--hover-color-hero-btn);
 }
 
 /* Особенности */
@@ -130,7 +138,7 @@ body {
 
 /* Команда */
 .team {
-  background: #f5f4fa;
+  background: var(--background-color-team);
 }
 .team-card {
   background: var(--background-color);
@@ -153,13 +161,13 @@ body {
 
 /* Подвал сайта */
 .footer {
-  background: #2f303a;
+  background: var(--background-color-footer);
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .contact-list-link.address {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .contact-list-link {
   font-style: normal;
@@ -167,7 +175,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 .contact-list-link.mail:hover,
 .contact-list-link.mail:focus {
@@ -176,4 +184,34 @@ body {
 .contact-list-link.phone:hover,
 .contact-list-link.phone:focus {
   background-color: var(--accent-color);
+}
+
+/* Портфолио */
+.portfolio-nav-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+.portfolio-nav-btn:hover,
+.portfolio-nav-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.portfolio-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-card-text {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
